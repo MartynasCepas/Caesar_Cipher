@@ -45,7 +45,7 @@ namespace Caesar_Cipher
             result2.Text = Caesar(textBox2.Text, key * -1);
         }
 
-        static string Caesar(string value, int shift)
+        public string Caesar(string value, int shift)
         {
             char[] buffer = value.ToCharArray();
             for (int i = 0; i < buffer.Length; i++)
