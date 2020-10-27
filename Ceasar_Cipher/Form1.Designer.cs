@@ -28,143 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.result1 = new System.Windows.Forms.TextBox();
-            this.result2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.encryptTextBox = new System.Windows.Forms.TextBox();
+            this.title = new System.Windows.Forms.Label();
+            this.encryptLabel = new System.Windows.Forms.Label();
+            this.decryptLabel = new System.Windows.Forms.Label();
+            this.keyLabel = new System.Windows.Forms.Label();
+            this.keyTrackBar = new System.Windows.Forms.TrackBar();
+            this.decryptTextBox = new System.Windows.Forms.TextBox();
+            this.encrypedLabel = new System.Windows.Forms.Label();
+            this.decryptedLabel = new System.Windows.Forms.Label();
+            this.ecryptedTextBox = new System.Windows.Forms.TextBox();
+            this.decryptedTextBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.keyTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // encryptTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 184);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(365, 65);
-            this.textBox1.TabIndex = 0;
+            this.encryptTextBox.Location = new System.Drawing.Point(23, 184);
+            this.encryptTextBox.Multiline = true;
+            this.encryptTextBox.Name = "encryptTextBox";
+            this.encryptTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.encryptTextBox.Size = new System.Drawing.Size(365, 65);
+            this.encryptTextBox.TabIndex = 0;
             // 
-            // label1
+            // title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(362, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Ceasar Encryptor";
+            this.title.AutoSize = true;
+            this.title.Location = new System.Drawing.Point(362, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(118, 17);
+            this.title.TabIndex = 1;
+            this.title.Text = "Caesar Encryptor";
             // 
-            // label2
+            // encryptLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 145);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Text to encrypt:";
+            this.encryptLabel.AutoSize = true;
+            this.encryptLabel.Location = new System.Drawing.Point(20, 145);
+            this.encryptLabel.Name = "encryptLabel";
+            this.encryptLabel.Size = new System.Drawing.Size(106, 17);
+            this.encryptLabel.TabIndex = 2;
+            this.encryptLabel.Text = "Text to encrypt:";
             // 
-            // label3
+            // decryptLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 297);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Text to decrypt:";
+            this.decryptLabel.AutoSize = true;
+            this.decryptLabel.Location = new System.Drawing.Point(20, 297);
+            this.decryptLabel.Name = "decryptLabel";
+            this.decryptLabel.Size = new System.Drawing.Size(106, 17);
+            this.decryptLabel.TabIndex = 3;
+            this.decryptLabel.Text = "Text to decrypt:";
             // 
-            // label4
+            // keyLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Key: 0";
+            this.keyLabel.AutoSize = true;
+            this.keyLabel.Location = new System.Drawing.Point(20, 46);
+            this.keyLabel.Name = "keyLabel";
+            this.keyLabel.Size = new System.Drawing.Size(48, 17);
+            this.keyLabel.TabIndex = 4;
+            this.keyLabel.Text = "Key: 0";
             // 
-            // trackBar1
+            // keyTrackBar
             // 
-            this.trackBar1.Location = new System.Drawing.Point(23, 77);
-            this.trackBar1.Maximum = 25;
-            this.trackBar1.Minimum = -25;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(365, 56);
-            this.trackBar1.TabIndex = 5;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.keyTrackBar.Location = new System.Drawing.Point(23, 77);
+            this.keyTrackBar.Maximum = 25;
+            this.keyTrackBar.Minimum = -25;
+            this.keyTrackBar.Name = "keyTrackBar";
+            this.keyTrackBar.Size = new System.Drawing.Size(365, 56);
+            this.keyTrackBar.TabIndex = 5;
+            this.keyTrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // textBox2
+            // decryptTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 341);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(365, 65);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.decryptTextBox.Location = new System.Drawing.Point(23, 341);
+            this.decryptTextBox.Multiline = true;
+            this.decryptTextBox.Name = "decryptTextBox";
+            this.decryptTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.decryptTextBox.Size = new System.Drawing.Size(365, 65);
+            this.decryptTextBox.TabIndex = 6;
+           
             // 
-            // label5
+            // encrypedLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(497, 145);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Encrypted text:";
+            this.encrypedLabel.AutoSize = true;
+            this.encrypedLabel.Location = new System.Drawing.Point(497, 145);
+            this.encrypedLabel.Name = "encrypedLabel";
+            this.encrypedLabel.Size = new System.Drawing.Size(102, 17);
+            this.encrypedLabel.TabIndex = 8;
+            this.encrypedLabel.Text = "Encrypted text:";
             // 
-            // label6
+            // decryptedLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(497, 297);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Decrypted text:";
+            this.decryptedLabel.AutoSize = true;
+            this.decryptedLabel.Location = new System.Drawing.Point(497, 297);
+            this.decryptedLabel.Name = "decryptedLabel";
+            this.decryptedLabel.Size = new System.Drawing.Size(103, 17);
+            this.decryptedLabel.TabIndex = 10;
+            this.decryptedLabel.Text = "Decrypted text:";
             // 
-            // result1
+            // ecryptedTextBox
             // 
-            this.result1.Location = new System.Drawing.Point(500, 184);
-            this.result1.Multiline = true;
-            this.result1.Name = "result1";
-            this.result1.ReadOnly = true;
-            this.result1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.result1.Size = new System.Drawing.Size(365, 65);
-            this.result1.TabIndex = 11;
+            this.ecryptedTextBox.Location = new System.Drawing.Point(500, 184);
+            this.ecryptedTextBox.Multiline = true;
+            this.ecryptedTextBox.Name = "ecryptedTextBox";
+            this.ecryptedTextBox.ReadOnly = true;
+            this.ecryptedTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ecryptedTextBox.Size = new System.Drawing.Size(365, 65);
+            this.ecryptedTextBox.TabIndex = 11;
             // 
-            // result2
+            // decryptedTextBox
             // 
-            this.result2.Location = new System.Drawing.Point(500, 341);
-            this.result2.Multiline = true;
-            this.result2.Name = "result2";
-            this.result2.ReadOnly = true;
-            this.result2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.result2.Size = new System.Drawing.Size(365, 65);
-            this.result2.TabIndex = 12;
+            this.decryptedTextBox.Location = new System.Drawing.Point(500, 341);
+            this.decryptedTextBox.Multiline = true;
+            this.decryptedTextBox.Name = "decryptedTextBox";
+            this.decryptedTextBox.ReadOnly = true;
+            this.decryptedTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.decryptedTextBox.Size = new System.Drawing.Size(365, 65);
+            this.decryptedTextBox.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 452);
-            this.Controls.Add(this.result2);
-            this.Controls.Add(this.result1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.decryptedTextBox);
+            this.Controls.Add(this.ecryptedTextBox);
+            this.Controls.Add(this.decryptedLabel);
+            this.Controls.Add(this.encrypedLabel);
+            this.Controls.Add(this.decryptTextBox);
+            this.Controls.Add(this.keyTrackBar);
+            this.Controls.Add(this.keyLabel);
+            this.Controls.Add(this.decryptLabel);
+            this.Controls.Add(this.encryptLabel);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.encryptTextBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Caesar Encryptor";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.keyTrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,17 +172,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox result1;
-        private System.Windows.Forms.TextBox result2;
+        private System.Windows.Forms.TextBox encryptTextBox;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label encryptLabel;
+        private System.Windows.Forms.Label decryptLabel;
+        private System.Windows.Forms.Label keyLabel;
+        private System.Windows.Forms.TrackBar keyTrackBar;
+        private System.Windows.Forms.TextBox decryptTextBox;
+        private System.Windows.Forms.Label encrypedLabel;
+        private System.Windows.Forms.Label decryptedLabel;
+        private System.Windows.Forms.TextBox ecryptedTextBox;
+        private System.Windows.Forms.TextBox decryptedTextBox;
     }
 }
 

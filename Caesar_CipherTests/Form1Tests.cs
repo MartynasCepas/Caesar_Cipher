@@ -19,7 +19,7 @@ namespace Caesar_Cipher.Tests
             string messageToEncode = "Labas";
             int key = 5;
             var form = new Form1();
-            
+
             Assert.AreEqual("Qfgfx", form.Caesar(messageToEncode, key));
         }
 
@@ -29,7 +29,7 @@ namespace Caesar_Cipher.Tests
             string messageToEncode = "Hello world! 12345 @ # $";
             int key = 8;
             var form = new Form1();
-            
+
             Assert.AreEqual("Pmttw ewztl! 12345 @ # $", form.Caesar(messageToEncode, key));
         }
 
@@ -49,7 +49,7 @@ namespace Caesar_Cipher.Tests
             string messageToEncode = "Qfgfx";
             int key = -5;
             var form = new Form1();
-            
+
             Assert.AreEqual("Labas", form.Caesar(messageToEncode, key));
         }
 
@@ -59,7 +59,7 @@ namespace Caesar_Cipher.Tests
             string messageToEncode = "Pmttw ewztl! 12345 @ # $";
             int key = -8;
             var form = new Form1();
-            
+
             Assert.AreEqual("Hello world! 12345 @ # $", form.Caesar(messageToEncode, key));
         }
     }
